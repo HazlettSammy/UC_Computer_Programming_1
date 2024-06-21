@@ -1,0 +1,27 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        double balance = 5000.0;
+        double annualInterestRate = 0.17;
+
+        // Calculate interest after one month
+        double monthlyInterestRate = annualInterestRate / 12;
+        double interestAfterOneMonth = balance * monthlyInterestRate;
+
+        // Calculate balance after one month
+        balance += interestAfterOneMonth;
+
+        System.out.println("Balance after one month: $" + balance);
+        System.out.println("Interest due after one month: $" + interestAfterOneMonth);
+
+        // Calculate interest after two months
+        double interestAfterTwoMonths = balance * monthlyInterestRate;
+
+        // Calculate balance after two months
+        balance += interestAfterTwoMonths;
+
+        System.out.println("Balance after two months: $" + balance);
+        System.out.println("Interest due after two months: $" + interestAfterTwoMonths);
+    }
+}
